@@ -10,5 +10,13 @@
     }
   },
   "renames": {},
-  "plugins": []
+  "plugins": [
+    {
+      "name": "jj-sensei",
+      "description": "Jujutsu startup fluency, installed help extraction, workspace isolation, and resumable repair tooling.",
+      "github": "msmorgan/jj-sensei",
+      "ref": "main",
+      "category": "developer-tools"
+    }
+  ]
 }

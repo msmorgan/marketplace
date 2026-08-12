@@ -52,11 +52,9 @@ def load_catalog(path: Path = CATALOG_PATH) -> dict[str, Any]:
     require_string(owner.get("email"), "marketplace.owner.email")
     require_string(owner.get("url"), "marketplace.owner.url")
 
-    # The catalog starts empty. This check tightens to reject an empty array
-    # once the first plugin is listed.
     plugins = catalog.get("plugins")
-    if not isinstance(plugins, list):
-        raise ValueError("plugins must be an array")
+    if not isinstance(plugins, list) or not plugins:
+        raise ValueError("plugins must be a non-empty array")
 
     names: set[str] = set()
     for index, plugin in enumerate(plugins):

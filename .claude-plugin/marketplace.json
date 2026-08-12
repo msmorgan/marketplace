@@ -6,5 +6,16 @@
     "email": "self@msmorgan.dev",
     "url": "https://github.com/msmorgan"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "jj-sensei",
+      "description": "Jujutsu startup fluency, installed help extraction, workspace isolation, and resumable repair tooling.",
+      "source": {
+        "source": "github",
+        "repo": "msmorgan/jj-sensei",
+        "ref": "main"
+      },
+      "category": "development"
+    }
+  ]
 }

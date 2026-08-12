@@ -52,8 +52,9 @@ complaint, but its handling there is unverified, so it is not written.
 
 ## Plugins
 
-The catalog is empty. Plugins are listed here as their singleton marketplaces
-are retired.
+| Plugin | Purpose |
+| --- | --- |
+| `jj-sensei` | Teach coding agents to use Jujutsu safely and effectively. |
 
 ## Install with Claude Code
 
@@ -63,10 +64,10 @@ Register the marketplace once:
 claude plugin marketplace add msmorgan/marketplace
 ```
 
-Install a plugin:
+Install jj-sensei:
 
 ```sh
-claude plugin install <plugin>@msmorgan
+claude plugin install jj-sensei@msmorgan
 ```
 
 ## Install with Codex
@@ -77,10 +78,10 @@ Register the marketplace once:
 codex plugin marketplace add msmorgan/marketplace
 ```
 
-Install a plugin:
+Install jj-sensei:
 
 ```sh
-codex plugin add <plugin>@msmorgan
+codex plugin add jj-sensei@msmorgan
 ```
 
 Start a new session after installing or updating a plugin so its skills and
@@ -112,10 +113,10 @@ refresh with:
 
 ```sh
 claude plugin marketplace update msmorgan
-claude plugin update <plugin>@msmorgan
+claude plugin update jj-sensei@msmorgan
 
 codex plugin marketplace upgrade msmorgan
-codex plugin add <plugin>@msmorgan
+codex plugin add jj-sensei@msmorgan
 
 agy plugin import claude
 ```
