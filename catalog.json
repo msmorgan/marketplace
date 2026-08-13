@@ -17,6 +17,13 @@
       "github": "msmorgan/jj-sensei",
       "ref": "main",
       "category": "developer-tools"
+    },
+    {
+      "name": "baton",
+      "description": "Relay unfinished work between agents.",
+      "github": "msmorgan/baton",
+      "ref": "main",
+      "category": "productivity"
     }
   ]
 }

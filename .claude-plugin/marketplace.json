@@ -16,6 +16,16 @@
         "ref": "main"
       },
       "category": "development"
+    },
+    {
+      "name": "baton",
+      "description": "Relay unfinished work between agents.",
+      "source": {
+        "source": "github",
+        "repo": "msmorgan/baton",
+        "ref": "main"
+      },
+      "category": "productivity"
     }
   ]
 }

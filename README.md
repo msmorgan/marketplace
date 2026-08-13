@@ -55,6 +55,7 @@ complaint, but its handling there is unverified, so it is not written.
 | Plugin | Purpose |
 | --- | --- |
 | `jj-sensei` | Teach coding agents to use Jujutsu safely and effectively. |
+| `baton` | Relay unfinished work between agents. |
 
 ## Install with Claude Code
 
