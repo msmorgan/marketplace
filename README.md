@@ -54,8 +54,12 @@ complaint, but its handling there is unverified, so it is not written.
 
 | Plugin | Purpose |
 | --- | --- |
-| `jj-sensei` | Teach coding agents to use Jujutsu safely and effectively. |
+| `jj-sensei` | Teach your agents Jujutsu. |
 | `baton` | Relay unfinished work between agents. |
+| `mtg-rules` | Judge-grade Magic: The Gathering rules answers, grounded in the Comprehensive Rules with verified citations. |
+| `comment-gardener` | Conservative pruning and polishing for code comments and docstrings. |
+| `jj-workflow` | Parallel-agent feature workflow for jj repos: claim workspaces, refresh against trunk, integrate back. |
+| `idris2-guide` | Make your agents productive and rigorous in Idris 2. |
 
 ## Install with Claude Code
 

@@ -13,7 +13,7 @@
   "plugins": [
     {
       "name": "jj-sensei",
-      "description": "Jujutsu startup fluency, installed help extraction, workspace isolation, and resumable repair tooling.",
+      "description": "Teach your agents Jujutsu.",
       "github": "msmorgan/jj-sensei",
       "ref": "main",
       "category": "developer-tools"
@@ -24,6 +24,34 @@
       "github": "msmorgan/baton",
       "ref": "main",
       "category": "productivity"
+    },
+    {
+      "name": "mtg-rules",
+      "description": "Judge-grade Magic: The Gathering rules answers and engine/grammar taxonomies, grounded in the Comprehensive Rules with verified citations.",
+      "github": "msmorgan/mtg-rules",
+      "ref": "main",
+      "category": "education"
+    },
+    {
+      "name": "comment-gardener",
+      "description": "Conservative pruning and polishing for code comments and docstrings.",
+      "github": "msmorgan/comment-gardener",
+      "ref": "main",
+      "category": "developer-tools"
+    },
+    {
+      "name": "jj-workflow",
+      "description": "Parallel-agent feature workflow for jj repos: claim/start feature workspaces, refresh against trunk, integrate back — with a config-based trunk-immutability guard, a git/flag-ban hook, and conflict tooling.",
+      "github": "msmorgan/jj-workflow",
+      "ref": "main",
+      "category": "developer-tools"
+    },
+    {
+      "name": "idris2-guide",
+      "description": "Make your agents productive and rigorous in Idris 2.",
+      "github": "msmorgan/idris2-guide",
+      "ref": "main",
+      "category": "developer-tools"
     }
   ]
 }

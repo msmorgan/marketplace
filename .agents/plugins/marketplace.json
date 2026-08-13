@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "jj-sensei",
-      "description": "Jujutsu startup fluency, installed help extraction, workspace isolation, and resumable repair tooling.",
+      "description": "Teach your agents Jujutsu.",
       "source": {
         "source": "url",
         "url": "https://github.com/msmorgan/jj-sensei.git",
@@ -31,6 +31,62 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "mtg-rules",
+      "description": "Judge-grade Magic: The Gathering rules answers and engine/grammar taxonomies, grounded in the Comprehensive Rules with verified citations.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/msmorgan/mtg-rules.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education"
+    },
+    {
+      "name": "comment-gardener",
+      "description": "Conservative pruning and polishing for code comments and docstrings.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/msmorgan/comment-gardener.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "jj-workflow",
+      "description": "Parallel-agent feature workflow for jj repos: claim/start feature workspaces, refresh against trunk, integrate back — with a config-based trunk-immutability guard, a git/flag-ban hook, and conflict tooling.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/msmorgan/jj-workflow.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "idris2-guide",
+      "description": "Make your agents productive and rigorous in Idris 2.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/msmorgan/idris2-guide.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
     }
   ]
 }
