@@ -61,11 +61,11 @@
       "category": "Developer Tools"
     },
     {
-      "name": "jj-workflow",
-      "description": "Parallel-agent feature workflow for jj repos: claim/start feature workspaces, refresh against trunk, integrate back — with a config-based trunk-immutability guard, a git/flag-ban hook, and conflict tooling.",
+      "name": "jj-kata",
+      "description": "Safe Jujutsu workspace coordination for parallel agents, with optional file-backed Kanban.",
       "source": {
         "source": "url",
-        "url": "https://github.com/msmorgan/jj-workflow.git",
+        "url": "https://github.com/msmorgan/jj-kata.git",
         "ref": "main"
       },
       "policy": {
