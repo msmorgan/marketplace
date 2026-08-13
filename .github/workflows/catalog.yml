@@ -1,0 +1,53 @@
+name: Catalog
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  manifests:
+    name: Generated manifests are current
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Check generated manifests
+        run: python3 scripts/generate_manifests.py --check
+
+      - name: Validate JSON syntax
+        run: |
+          python3 -m json.tool catalog.json >/dev/null
+          python3 -m json.tool .claude-plugin/marketplace.json >/dev/null
+          python3 -m json.tool .agents/plugins/marketplace.json >/dev/null
+
+  harnesses:
+    name: Harness validators accept the manifests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+
+      # The Python check only proves the manifests match catalog.json. Each
+      # harness enforces rules of its own: Claude rejects reserved marketplace
+      # names, source path traversal, and broken rename chains; Codex rejects
+      # unknown policy enum values.
+      - name: Validate Claude manifest
+        env:
+          CLAUDE_CONFIG_DIR: ${{ runner.temp }}/claude
+        run: npx --yes @anthropic-ai/claude-code@2 plugin validate .
+
+      - name: Validate Codex manifest
+        env:
+          CODEX_HOME: ${{ runner.temp }}/codex
+        run: |
+          mkdir -p "$CODEX_HOME"
+          npx --yes @openai/codex@0 plugin marketplace add "$PWD"

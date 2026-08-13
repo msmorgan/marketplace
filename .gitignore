@@ -1,0 +1,5 @@
+!.agents/
+!.agents/plugins/
+!.agents/plugins/marketplace.json
+__pycache__/
+*.py[cod]

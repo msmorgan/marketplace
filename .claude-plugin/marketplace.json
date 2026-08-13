@@ -1,0 +1,10 @@
+{
+  "name": "msmorgan",
+  "description": "Agent plugins maintained by Michael Morgan.",
+  "owner": {
+    "name": "Michael Morgan",
+    "email": "self@msmorgan.dev",
+    "url": "https://github.com/msmorgan"
+  },
+  "plugins": []
+}
