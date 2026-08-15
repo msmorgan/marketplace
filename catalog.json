@@ -52,6 +52,13 @@
       "github": "msmorgan/idris2-guide",
       "ref": "main",
       "category": "developer-tools"
+    },
+    {
+      "name": "test-appraiser",
+      "description": "Find tests that create false assurance.",
+      "github": "msmorgan/test-appraiser",
+      "ref": "main",
+      "category": "developer-tools"
     }
   ]
 }

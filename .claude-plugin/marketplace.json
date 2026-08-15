@@ -66,6 +66,16 @@
         "ref": "main"
       },
       "category": "development"
+    },
+    {
+      "name": "test-appraiser",
+      "description": "Find tests that create false assurance.",
+      "source": {
+        "source": "github",
+        "repo": "msmorgan/test-appraiser",
+        "ref": "main"
+      },
+      "category": "development"
     }
   ]
 }

@@ -60,6 +60,7 @@ complaint, but its handling there is unverified, so it is not written.
 | `comment-gardener` | Conservative pruning and polishing for code comments and docstrings. |
 | `jj-kata` | Safe Jujutsu workspace coordination for parallel agents, with optional file-backed Kanban. |
 | `idris2-guide` | Make your agents productive and rigorous in Idris 2. |
+| `test-appraiser` | Find tests that create false assurance. |
 
 ## Install with Claude Code
 
