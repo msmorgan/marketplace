@@ -9,7 +9,9 @@
       "url": "https://github.com/msmorgan"
     }
   },
-  "renames": {},
+  "renames": {
+    "idris2-guide": "idris2-firebox"
+  },
   "plugins": [
     {
       "name": "jj-sensei",
@@ -47,9 +49,9 @@
       "category": "developer-tools"
     },
     {
-      "name": "idris2-guide",
-      "description": "Make your agents productive and rigorous in Idris 2.",
-      "github": "msmorgan/idris2-guide",
+      "name": "idris2-firebox",
+      "description": "Make your agents feel at home using Idris 2.",
+      "github": "msmorgan/idris2-firebox",
       "ref": "main",
       "category": "developer-tools"
     },

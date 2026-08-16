@@ -58,11 +58,11 @@
       "category": "development"
     },
     {
-      "name": "idris2-guide",
-      "description": "Make your agents productive and rigorous in Idris 2.",
+      "name": "idris2-firebox",
+      "description": "Make your agents feel at home using Idris 2.",
       "source": {
         "source": "github",
-        "repo": "msmorgan/idris2-guide",
+        "repo": "msmorgan/idris2-firebox",
         "ref": "main"
       },
       "category": "development"
@@ -77,5 +77,8 @@
       },
       "category": "development"
     }
-  ]
+  ],
+  "renames": {
+    "idris2-guide": "idris2-firebox"
+  }
 }

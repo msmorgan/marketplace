@@ -75,11 +75,11 @@
       "category": "Developer Tools"
     },
     {
-      "name": "idris2-guide",
-      "description": "Make your agents productive and rigorous in Idris 2.",
+      "name": "idris2-firebox",
+      "description": "Make your agents feel at home using Idris 2.",
       "source": {
         "source": "url",
-        "url": "https://github.com/msmorgan/idris2-guide.git",
+        "url": "https://github.com/msmorgan/idris2-firebox.git",
         "ref": "main"
       },
       "policy": {
